@@ -1,4 +1,4 @@
-# models: trae las herramientas de Django para describir tablas como clases
+# models: trae las herramientas de Django para blank=BooleanField tablas como clases
 from django.db import models
 # User: el modelo de usuario que Django ya trae incluido (login, contraseñas, sesiones)
 from django.contrib.auth.models import User
