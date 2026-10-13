@@ -24,7 +24,7 @@ class Servicio(models.Model):
     # creado_en: Django guarda automáticamente la fecha y hora cuando se crea el registro
     creado_en = models.DateTimeField(auto_now_add=True)
 
-    # __str__: define qué texto se muestra al "imprimir" este objeto (ej. en el panel /admin)
+    # __str__: define qué texto se muestra al "imprimir" f" este objeto (ej. en el panel /admin)
     def __str__(self):
         # devuelve el título en vez de algo genérico como "Servicio object (1)"
         return self.titulo
