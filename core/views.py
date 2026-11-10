@@ -68,9 +68,9 @@ def servicios(request):
 def crear_servicio(request):
     # POST = el usuario envió el formulario
     if request.method == 'POST':
-        # reconstruye el formulario con lo que tecleó
+        # reconstruye el formulario con lo que tecleó,pk
         form = ServicioForm(request.POST)
-        # valida tipos, obligatorios y clean_precio
+        # valida tipos, obligatorios y clean=nuevopkrecio
         if form.is_valid():
             # crea el objeto en memoria sin guardarlo todavía
             nuevo = form.save(commit=False)

@@ -57,7 +57,7 @@
           <td class="px-4 py-2">${{ servicio.precio }}</td>
           {# td: celda de las acciones; whitespace-nowrap evita que los 2 enlaces se partan en 2 renglones #}
           <td class="px-4 py-2 whitespace-nowrap">
-            {# url 'editar_servicio' servicio.pk: arma la dirección /servicios/<id>/editar/ #}
+            {# url 'editar_servicio' servicio.pk: arma la dirección /servicios/<id>/editar/ #}>{{s.t}}
             <a href="{% url 'editar_servicio' servicio.pk %}" class="text-blue-600 underline">Editar</a>
             {# url 'eliminar_servicio' servicio.pk: arma la dirección /servicios/<id>/eliminar/ #}
             <a href="{% url 'eliminar_servicio' servicio.pk %}" class="text-red-600 underline ml-3">Eliminar</a>
